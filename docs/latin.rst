@@ -273,7 +273,12 @@ These taggers were built with the assistance of the NLTK. The backoff tagger is 
 1–2–3–gram backoff tagger
 `````````````````````````
 .. code-block:: python
-
+   In [1]: from cltk.corpus.utils.importer import CorpusImporter
+   In [2]: corpus_importer = CorpusImporter('latin')
+   In [3]: corpus_importer.import_corpus('latin_models_cltk')
+   In [4]: from cltk.tag import pos
+   In [5]: tagger = pos.POSTag('latin')
+   
    In [6]: tagger.tag_ngram_123_backoff('Gallia est omnis divisa in partes tres')
    Out[6]:
    [('Gallia', None),
