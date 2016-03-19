@@ -273,6 +273,7 @@ These taggers were built with the assistance of the NLTK. The backoff tagger is 
 1–2–3–gram backoff tagger
 `````````````````````````
 .. code-block:: python
+
    In [1]: from cltk.corpus.utils.importer import CorpusImporter
    In [2]: corpus_importer = CorpusImporter('latin')
    In [3]: corpus_importer.import_corpus('latin_models_cltk')
